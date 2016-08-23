@@ -1,4 +1,4 @@
-./.vagrant
-./sshconf
-./Packer/ISO/*
-./Packer/*.box
+.vagrant
+sshconf
+Packer/ISO/*
+Packer/*.box
