@@ -1,0 +1,4 @@
+./.vagrant
+./sshconf
+./Packer/ISO/*
+./Packer/*.box
