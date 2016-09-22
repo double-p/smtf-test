@@ -1,0 +1,23 @@
+---
+interfaces:
+  vlan21:
+    type: vlan
+    hostif: 21
+    description: my-vlan-21
+    ipaddr: 10.20.21.21
+    vlan: 21
+    device: em1
+  vlan22:
+    type: vlan
+    hostif: 22
+    description: my-vlan-22
+    ipaddr: 10.20.22.21
+    vlan: 22
+    device: em1
+  vlan23:
+    type: vlan
+    hostif: 23
+    description: my-vlan-23
+    ipaddr: 10.20.23.21
+    vlan: 23
+    device: em1

@@ -1,0 +1,10 @@
+[gw]
+#rdomain-gw-left ansible_ssh_host=10.0.123.254 ansible_ssh_private_key_file=../.vagrant/machines/rdomain-gw-left/virtualbox/private_key
+rdomain-gw-right ansible_ssh_host=10.0.123.253 ansible_ssh_private_key_file=../.vagrant/machines/rdomain-gw-right/virtualbox/private_key
+
+[tenant]
+tenant1 ansible_ssh_host=10.60.39.52 ansible_ssh_private_key_file=../.vagrant/machines/tenant1/virtualbox/private_key
+tenant2 ansible_ssh_host=10.23.42.52 ansible_ssh_private_key_file=../.vagrant/machines/tenant2/virtualbox/private_key
+
+[inetsrv]
+inetsrv ansible_ssh_host=172.19.82.10 ansible_ssh_private_key_file=../.vagrant/machines/inetsrv/virtualbox/private_key

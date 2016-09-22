@@ -1,0 +1,6 @@
+config.vm.provision "ansible" do |ansible|
+ ansible.playbook = "ansible/site.yml"
+ #ansible.verbose = "vvvv"
+ ansible.inventory_path = "ansible/smtf_hosts"
+ ansible.host_key_checking = false
+end

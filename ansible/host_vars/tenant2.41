@@ -1,0 +1,23 @@
+---
+interfaces:
+  vlan41:
+    type: vlan
+    hostif: 41
+    description: my-vlan-41
+    ipaddr: 10.40.41.41
+    vlan: 41
+    device: em1
+  vlan42:
+    type: vlan
+    hostif: 42
+    description: my-vlan-42
+    ipaddr: 10.40.42.41
+    vlan: 42
+    device: em1
+  vlan43:
+    type: vlan
+    hostif: 43
+    description: my-vlan-43
+    ipaddr: 10.40.43.41
+    vlan: 43
+    device: em1

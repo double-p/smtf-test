@@ -1,0 +1,9 @@
+---
+interfaces:
+  vlan10:
+    type: vlan
+    hostif: 10
+    description: my-vlan-10
+    ipaddr: 172.19.10.10
+    vlan: 10
+    device: em1

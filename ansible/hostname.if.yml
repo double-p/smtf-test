@@ -1,0 +1,8 @@
+---
+- name: create hostname.if
+  gather_facts: no
+  hosts: all
+
+  roles:
+   - tenant
+   - rdomain

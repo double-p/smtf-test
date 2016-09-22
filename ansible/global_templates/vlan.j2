@@ -1,0 +1,6 @@
+description "{{ item.value.description }}"
+vlan {{ item.value.vlan }} vlandev {{ item.value.device }}
+{% if inventory_hostname | select("match", "rdomain.*") %}
+rdomain {{ item.value.hostif }}
+{% endif %}
+inet {{ item.value.ipaddr }}

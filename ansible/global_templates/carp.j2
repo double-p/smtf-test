@@ -1,0 +1,9 @@
+description {{ item.value.description }} 
+vhid {{ item.value.vhid }} 
+pass {{ item.value.pass }} 
+advskew {{ item.value.advskew }} 
+carpdev {{ item.value.device }}
+{% if inventory_hostname | select("match", "rdomain.*") %}
+rdomain {{ item.value.hostif }}
+{% endif %}
+inet {{ item.value.ipaddr }} 

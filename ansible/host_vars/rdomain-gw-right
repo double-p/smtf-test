@@ -1,0 +1,9 @@
+---
+interfaces:
+  vlan10:
+    type: vlan
+    hostif: 10
+    description: gw-vlan-10
+    ipaddr: 172.19.10.1
+    vlan: 10
+    device: em2

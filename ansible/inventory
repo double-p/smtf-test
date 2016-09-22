@@ -1,0 +1,19 @@
+[local]
+localhost ansible_connection=local
+
+[tenants]
+tenant1.21 ansible_connection=local
+tenant2.41 ansible_connection=local
+tenant3.61 ansible_connection=local
+
+[rdomains]
+rdomain-gw-left ansible_connection=local
+rdomain-gw-right ansible_connection=local
+
+[inet]
+inetsrv ansible_connection=local
+
+[all:children]
+tenants
+rdomains
+inet

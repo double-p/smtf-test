@@ -1,0 +1,18 @@
+#[local]
+#localhost ansible_connection=local
+
+[tenants]
+tenant1.21 ansible_ssh_host=10.20.20.21 ansible_ssh_private_key_file=../.vagrant/machines/tenant1.21/virtualbox/private_key
+tenant2.41 ansible_ssh_host=10.40.40.52 ansible_ssh_private_key_file=../.vagrant/machines/tenant2.41/virtualbox/private_key
+
+[rdomains]
+rdomain-gw-left ansible_ssh_host=10.0.123.254 ansible_ssh_private_key_file=../.vagrant/machines/rdomain-gw-left/virtualbox/private_key
+rdomain-gw-right ansible_ssh_host=10.0.123.253 ansible_ssh_private_key_file=../.vagrant/machines/rdomain-gw-right/virtualbox/private_key
+
+[inet]
+inetsrv ansible_ssh_host=172.19.82.10 ansible_ssh_private_key_file=../.vagrant/machines/inetsrv/virtualbox/private_key
+
+[all:children]
+tenants
+rdomains
+inet

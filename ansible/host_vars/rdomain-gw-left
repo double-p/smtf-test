@@ -1,0 +1,44 @@
+---
+interfaces:
+  vlan21:
+    type: vlan
+    hostif: 21
+    description: gw-vlan-21
+    ipaddr: 10.20.21.1
+    vlan: 21
+    device: em1
+  vlan22:
+    type: vlan
+    hostif: 22
+    description: gw-vlan-22
+    ipaddr: 10.20.22.1
+    vlan: 22
+    device: em1
+  vlan23:
+    type: vlan
+    hostif: 23
+    description: gw-vlan-23
+    ipaddr: 10.20.23.1
+    vlan: 23
+    device: em1
+  vlan41:
+    type: vlan
+    hostif: 41
+    description: gw-vlan-41
+    ipaddr: 10.40.41.1
+    vlan: 41
+    device: em2
+  vlan42:
+    type: vlan
+    hostif: 42
+    description: gw-vlan-42
+    ipaddr: 10.40.42.1
+    vlan: 42
+    device: em2
+  vlan43:
+    type: vlan
+    hostif: 43
+    description: gw-vlan-43
+    ipaddr: 10.40.43.1
+    vlan: 43
+    device: em2

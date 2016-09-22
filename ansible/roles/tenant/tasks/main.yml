@@ -1,0 +1,8 @@
+---
+- name: temp output directory
+  file: path=/tmp/ansible-generated/{{ inventory_hostname}} mode=0755 state=directory
+#- debug: var=item.key
+  #with_dict: interfaces
+- name: generate hostname.if for carp/vlan
+  template: src=./global_templates/{{ item.value.type }}.j2 dest=/tmp/ansible-generated/{{ inventory_hostname }}/hostname.{{ item.value.type }}{{ item.value.hostif }}
+  with_dict: "{{ interfaces }}"
