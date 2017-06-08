@@ -6,6 +6,7 @@ interfaces:
     description: gw-vlan-21
     ipaddr: 10.20.21.1
     vlan: 21
+    rdomain: 21
     device: em1
   vlan22:
     type: vlan
@@ -27,6 +28,7 @@ interfaces:
     description: gw-vlan-41
     ipaddr: 10.40.41.1
     vlan: 41
+    rdomain: 41
     device: em2
   vlan42:
     type: vlan

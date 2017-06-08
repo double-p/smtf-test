@@ -52,7 +52,7 @@
     {
       "type": "shell",
       "environment_vars": [
-         "PKG_PATH=http://artfiles.org/openbsd/snapshots/packages/%a/"
+         "PKG_PATH=http://artfiles.org/openbsd/6.0/packages/%a/"
       ],
       "inline": "pkg_add -Iz sudo-1.8 python-2.7"
     }
