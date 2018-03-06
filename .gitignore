@@ -2,3 +2,4 @@
 sshconf
 Packer/ISO/*
 Packer/*.box
+presenter/*
